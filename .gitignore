@@ -1,0 +1,40 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+src/main/resources/google
+src/main/resources/ecompagn-cultur-notification-firebase-adminsdk-zdpb9-85cee117da.json
+src/main/resources/fcmpush-1c232-firebase-adminsdk-1q1x9-022fa87eb7.json
+src/main/resources/db/changelog/database
+src/main/resources/Autres
+.env
+.jpb

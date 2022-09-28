@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eCompagnon culturel</title>
+     <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        .entete{
+            background-color:#3DC2FF;
+            color: white;
+            padding: 2px;
+            width: 100%;
+            height: 0%;
+            margin-bottom: 1px;
+            font-size: 10px;
+        }
+
+        .titre
+        {
+            background-color: white;
+            width: 97%;
+            color: #3DC2FF;
+            /*padding-left: 2px;*/
+            margin-left: 1%;
+            position: center;
+            /*padding-bottom: 1%;
+            padding-top: 1%;*/
+        }
+
+
+        mat-toolbar
+        {
+            width: 98%;
+            background-color:white ;
+        }
+
+
+        i{
+            color: #3DC2FF;
+            font-size: 20px;
+
+        }
+
+        body{
+
+            font-size: 20px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="entete">
+    <div class="titre"><h1><i>e</i>Compagnon culturel</h1></div>
+
+</div>
+<div>Bonjour <b th:text="${name}"></b>,</div>
+<p th:text="${contenu}"></p>
+<a th:href="@{${link}}" th:text="${textLink}"></a>
+<p>Ce lien expirera dans  15 minutes. </p>
+<p>Merci et à tantôt,</p>
+<p>L’équipe du projet Médiateurs culturels</p>
+<a th:href="@{${linkSite}}" th:text="${textSite}"></a>
+</body>
+</html>
